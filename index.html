@@ -8,7 +8,11 @@
       table {
         margin: 1em auto;
       }
-      td, input {
+      input {
+        height: 30px;
+        width: 30px;
+      }
+      td {
         height: 30px;
         width: 30px;
         border: 1px solid;
@@ -41,7 +45,7 @@
           board += '<tr>';
           for (let j = 0; j < puzzle[i].length; j++) {
             if (puzzle[i][j] === 0) {
-              board += '<td><input></input></td>';
+              board += `<td><input></input></td>`;
             } else {
               board += `<td>${puzzle[i][j]}</td>`;
             }
